@@ -51,7 +51,7 @@ export default class MainPedidos extends Component {
                                 <td>{pedidos.telefone}</td>
                                 <td>{pedidos.produto}</td>
                                 <td>{pedidos.valor}</td>
-                                <td> <Link to={`/usuarios/${pedidos.id}`}> <button type="button" class="btn btn-primary">Detalhes</button> </Link> </td>
+                                <td> <Link to={`/pedidos/${pedidos.id}`}> <button type="button" class="btn btn-primary">Detalhes</button> </Link> </td>
                                 <td> <Link to={`/editarPedidos/${pedidos.id}`}> <button type="button" class="btn btn-warning">Atualizar</button> </Link></td>
                                 <td> <Link to={`/deletarPedidos/${pedidos.id}`}> <button type="button" class="btn btn-danger">Excluir</button> </Link></td>
                             </tr>

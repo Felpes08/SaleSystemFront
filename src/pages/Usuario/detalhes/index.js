@@ -18,7 +18,7 @@ export default class Usuario extends Component {
     }
  
     render() {
-        const { usuario, index } = this.state;
+        const { usuario } = this.state;
  
         if (usuario.ativo) {
             usuario.ativo = "Usuário Ativo";

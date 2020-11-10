@@ -71,7 +71,7 @@ class DeletarPedidos extends Component {
     handleClick = event => {
         const { id } = this.props.match.params;
  
-        fetch(`${process.env.REACT_APP_API_URL}/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/pedidos/${id}`, {
             method: "delete"
         })
             .then(telefone => {
