@@ -37,7 +37,7 @@ class CriarUsuario extends Component {
             return <Redirect to="/usuarios" />;
         } else {
             return (
-                <form onSubmit={this.handleSubmit}>
+                <form className="flex" onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Criar Usuário</legend>
                         <div className="usuario-insert">

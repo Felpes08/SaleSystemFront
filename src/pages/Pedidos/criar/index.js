@@ -38,7 +38,7 @@ class CriarPedidos extends Component {
             return <Redirect to="/pedidos" />;
         } else {
             return (
-                <form onSubmit={this.handleSubmit}>
+                <form className="flex" onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Criar Cliente</legend>
                         <div className="pedidos-insert">

@@ -1,29 +1,29 @@
 @keyframes up {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
   }
-  .animate-up {
-    display: flex;
-    flex-direction: column;
-    animation: up;
-    animation-duration: 300ms;
-    animation-fill-mode: backwards;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  @keyframes right {
-    from {
-      transform: translateX(-100%)
-    }
-    to {
-      transform: translateX(0)
-    }
+}
+.animate-up {
+  display: flex;
+  flex-direction: column;
+  animation: up;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+@keyframes right {
+  from {
+    transform: translateX(-100%);
   }
-  .animate-right {
-    animation-name: right ; 
-    animation-duration: 300ms;    
+  to {
+    transform: translateX(0);
   }
+}
+.animate-right {
+  animation-name: right;
+  animation-duration: 300ms;
+}
