@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    color: white;
+  }
+  :root {
+    font-size: 10px;
+  }
+  body,
+  input,
+  button,
+  textarea,
+  main {
+    font: 400 1.8rem/1 "Open Sans", sans-serif;
+  }
+  body {
+    font-size: 18px;
+  }
+  .page-landing .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-gap: 25px;
+  }
+
+  .page-landing .buttons a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .page-landing .buttons a:hover {
+    color: #c1c1c1;
+  }
+  
