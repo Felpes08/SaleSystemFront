@@ -85,9 +85,11 @@ export default class MainUsuario extends Component {
                 </td>
               </tr>
             ))}
+            <Link to={`/`} className="back"> Voltar </Link> <br />
           </tbody>
         </table>
       </div>
+  
     );
   }
 }

@@ -41,3 +41,9 @@
     background: blue;
     color: #fff;
 }
+table {
+    margin-top: 2rem;
+}
+.btn {
+    margin-right: 1rem;
+}

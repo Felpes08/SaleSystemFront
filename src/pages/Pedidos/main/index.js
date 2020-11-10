@@ -56,6 +56,7 @@ export default class MainPedidos extends Component {
                                 <td> <Link to={`/deletarPedidos/${pedidos.id}`}> <button type="button" class="btn btn-danger">Excluir</button> </Link></td>
                             </tr>
                         ))}
+                        <Link to={`/`} className="back"> Voltar </Link> <br />
                     </tbody>
                 </table>
             </div>
