@@ -29,7 +29,7 @@ class DeletarProdutos extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`http://localhost:3003/sistema/produtos/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/produtos/${id}`)
             .then(storage => {
                 storage.json().then(storage => {
                     if (storage.error) {

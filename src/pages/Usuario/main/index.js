@@ -17,7 +17,7 @@ export default class MainUsuario extends Component {
     fetch(`${process.env.REACT_APP_API_URL}/sistema/usuarios`)
       .then((usuario) =>
         usuario.json().then((usuario) => this.setState({ usuario }))
-      )
+      ).then(console.log)
       .catch((erro) => this.setState({ erro }));
   }
 
@@ -28,14 +28,14 @@ export default class MainUsuario extends Component {
       <div className="usuario-list">
         <Link to={`/criarUsuario`}>
           {" "}
-          <button type="button" class="btn btn-success">
+          <button type="button" className="btn btn-success">
             Novo
           </button>{" "}
         </Link>
         <br />
         <br />
 
-        <table class="table table-striped">
+        <table className="table table-striped">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -60,7 +60,7 @@ export default class MainUsuario extends Component {
                   {" "}
                   <Link to={`/usuarios/${usuario.id}`}>
                     {" "}
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" className="btn btn-primary">
                       Detalhes
                     </button>{" "}
                   </Link>{" "}
@@ -69,7 +69,7 @@ export default class MainUsuario extends Component {
                   {" "}
                   <Link to={`/editarUsuario/${usuario.id}`}>
                     {" "}
-                    <button type="button" class="btn btn-warning">
+                    <button type="button" className="btn btn-warning">
                       Atualizar
                     </button>{" "}
                   </Link>
@@ -78,7 +78,7 @@ export default class MainUsuario extends Component {
                   {" "}
                   <Link to={`/deletarUsuario/${usuario.id}`}>
                     {" "}
-                    <button type="button" class="btn btn-danger">
+                    <button type="button" className="btn btn-danger">
                       Excluir
                     </button>{" "}
                   </Link>

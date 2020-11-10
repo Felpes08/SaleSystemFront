@@ -145,7 +145,7 @@ class CriarProdutos extends Component {
     };
  
     handleSubmit = event => {
-        fetch("${process.env.REACT_APP_API_URL}/sistema/produtos", {
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/produtos`, {
             method: "post",
             body: JSON.stringify(this.state.produtos),
             headers: {
