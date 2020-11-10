@@ -46,8 +46,14 @@ export default class Main extends Component {
                             <tr>
                                 <th scope="row">{produtos.id}</th>
                                 <td>{produtos.nome}</td>
-                                <td>{produtos.costPrice}</td>
-                                <td>{produtos.salePrice}</td>
+                                <td>{produtos.costPrice.toLocaleString('pt-BR', {
+                                    style: 'currency',
+                                    currency: 'BRL'
+                                    })}</td>
+                                <td>{produtos.salePrice.toLocaleString('pt-BR', {
+                                    style: 'currency',
+                                    currency: 'BRL'
+                                    })}</td>
                                 <td>{produtos.storage}</td>
                                 <td>{produtos.ativo ? "Sim" : "Não"}</td>
                                 <td> <Link to={`/produtos/${produtos.id}`}> <button type="button" class="btn btn-primary">Detalhes</button> </Link> </td>

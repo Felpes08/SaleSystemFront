@@ -11,7 +11,7 @@ function Landing() {
           </div>
         </header>
         <main>
-          <h1 className="animate-up">Compre o Melhor armamento do mundo</h1>
+          <h1>Compre o Melhor armamento do mundo</h1>
           <div className="visit">
             <p class="animate-up">
               Visite nossa loja, temos os melhores preços

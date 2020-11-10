@@ -37,7 +37,7 @@ class CriarProdutos extends Component {
             return <Redirect to="/produtos" />;
         } else {
             return (
-                <form onSubmit={this.handleSubmit}>
+                <form className="flex" onSubmit={this.handleSubmit}>
                     <fieldset>
                         <legend>Criar Produto</legend>
                         <div className="produtos-insert">
